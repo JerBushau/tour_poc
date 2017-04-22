@@ -7,8 +7,6 @@
   </head>
   <body>
 
-    <button class="btn" onclick="nextStop()">next</button>
-
     <div id="main-wrap">
 
       <div id="map-wrap">
@@ -21,6 +19,13 @@
       <div id="panel-wrap">
         <h1>Directions</h1>
         <div id="panel"></div>
+        <button class="btn" onclick="nextStop()">next</button>
+        <select id="mode" onchange="calculateAndDisplayRoute()">
+          <option value="DRIVING">driving</option>
+          <option value="BICYCLING">bike</option>
+          <option value="WALKING">walking</option>
+          <option value="TRANSIT">bus</option>
+        </select>
       </div>
 
     </div> <!-- end main-wrap -->

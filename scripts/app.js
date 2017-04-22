@@ -6,7 +6,7 @@ var directionsDisplay;
 var currentLocation;
 var currentDestination;
 var currentIndex = 0;
-var travelMode = 'DRIVING';
+var travelMode;
 
 // JSON stops
 var tourStops = [
@@ -30,6 +30,7 @@ var tourStops = [
   }
 ];
 
+// set default destination view
 setDestination();
 
 // check for geolocation
@@ -53,7 +54,7 @@ function findCurrentLocation() {
   });
 }
 
-// set and render destination
+// set and render destination view
 function setDestination() {
   let stop = tourStops[currentIndex];
   currentDestination = stop.location;
@@ -84,11 +85,13 @@ function initMap() {
 }
 
 // calculate and render directions
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+function calculateAndDisplayRoute() {
+  var travelMode = document.getElementById('mode').value;
+
   directionsService.route({
     origin: currentLocation,
     destination: currentDestination,
-    travelMode: travelMode,
+    travelMode: google.maps.TravelMode[travelMode],
   }, (response, status) => {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
