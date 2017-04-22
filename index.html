@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour-app</title>
+    <link rel="stylesheet" type="text/css" href="style/css/main.css">
+  </head>
+  <body>
+
+    <button class="btn" onclick="nextStop()">next</button>
+
+    <div id="main-wrap">
+
+      <div id="map-wrap">
+        <h1 id="name"></h1>
+        <div id="map"></div>
+        <h3 id="info"></h3>
+        <img id="photo" src="">
+      </div>
+
+      <div id="panel-wrap">
+        <h1>Directions</h1>
+        <div id="panel"></div>
+      </div>
+
+    </div> <!-- end main-wrap -->
+
+    <script src="scripts/app.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg03i5zkHFpxv8XpEdhhdXLT57Y9GXkBc&callback=initMap"></script>
+  </body>
+</html>
