@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tour-app</title>
     <link rel="stylesheet" type="text/css" href="style/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
   <body>
 
     <div id="main-wrap">
 
-      <div id="map-wrap">
+      <div id="info-wrap">
         <h1 id="name"></h1>
-        <div id="map"></div>
-        <h1>Directions</h1>
-        <div id="panel"></div>
-      </div>
-
-      <div id="panel-wrap">
         <img id="photo" src="">
         <h3 id="info"></h3>
         <button class="btn" onclick="nextStop()">next</button>
-        <select id="mode" onchange="calculateAndDisplayRoute()">
+      </div> <!-- end info-wrap -->
+
+      <div id="map-wrap">
+        <div id="map"></div>
+        <h1>Directions</h1>
+        <select id="mode" class="btn" onchange="calculateAndDisplayRoute()">
           <option value="DRIVING">driving</option>
           <option value="BICYCLING">bike</option>
           <option value="WALKING">walking</option>
           <option value="TRANSIT">bus</option>
         </select>
-      </div>
+        <div id="panel"></div>
+      </div> <!-- end main-wrap -->
 
     </div> <!-- end main-wrap -->
 
