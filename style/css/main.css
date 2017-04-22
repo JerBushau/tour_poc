@@ -32,3 +32,13 @@
   height: 200px;
   width: 350px;
 }
+
+@media (max-width: 600px) {
+  #main-wrap {
+    flex-direction: column;
+  }
+  #map-wrap,
+  #panel-wrap {
+    width: 100%;
+  }
+}

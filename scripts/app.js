@@ -14,7 +14,7 @@ var tourStops = [
     name: '1) Sunergos on preston',
     location: '2122 S Preston St, Louisville, KY 40217',
     img: 'https://static1.squarespace.com/static/54c6434de4b0badc93af5fb8/t/54e96c65e4b0a4e937ac1237/1424584349432/?format=750w',
-    info: 'Chill spot to get some work done, on the crowded side at times. Nord\'s bakery is right next door!'
+    info: 'Nice spot to get some work done, on the crowded side at times. Nord\'s bakery is right next door!'
   },
   {
     name: '2) Sunergos on 5th',
