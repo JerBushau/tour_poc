@@ -26,7 +26,7 @@ var tourStops = [
     name: '3) Sunergos on Woodlawn',
     location: '306 W Woodlawn Ave, Louisville, KY 40214',
     img: 'https://static1.squarespace.com/static/54c6434de4b0badc93af5fb8/t/54cd32f5e4b03ca9e80fc66f/1422734114254/Sunergos-4+copy.jpg?format=750w',
-    info: 'Plenty of seating, southside location. \nSucculents coloring book air plant, put a bird on it pok pok roof party pitchfork glossier everyday carry gentrify proident. Pour-over roof party edison bulb, consectetur ramps activated charcoal yuccie butcher bicycle rights culpa anim ullamco quinoa flannel. Tilde dolore labore magna godard hexagon single-origin coffee. Microdosing snackwave kale chips, intelligentsia plaid laborum nisi photo booth venmo pabst est id food truck hoodie pok pok.'
+    info: 'Plenty of seating, southside location. Succulents coloring book air plant, put a bird on it pok pok roof party pitchfork glossier everyday carry gentrify proident. Pour-over roof party edison bulb, consectetur ramps activated charcoal yuccie butcher bicycle rights culpa anim ullamco quinoa flannel. Tilde dolore labore magna godard hexagon single-origin coffee. Microdosing snackwave kale chips, intelligentsia plaid laborum nisi photo booth venmo pabst est id food truck hoodie pok pok.'
   }
 ];
 

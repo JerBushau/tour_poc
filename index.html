@@ -12,23 +12,25 @@
     <div id="main-wrap">
 
       <div id="info-wrap">
-        <h1 id="name"></h1>
+        <h1 id="name" class="mt-0"></h1>
         <img id="photo" src="">
-        <h3 id="info"></h3>
-        <button class="btn" onclick="nextStop()">next</button>
+        <p id="info"></p>
+        <button class="btn right" onclick="nextStop()">next</button>
       </div> <!-- end info-wrap -->
 
       <div id="map-wrap">
         <div id="map"></div>
-        <h1 class="mb-0">Directions</h1>
-        <select id="mode" class="btn" onchange="calculateAndDisplayRoute()">
-          <option value="DRIVING">driving</option>
-          <option value="BICYCLING">Bicycling</option>
-          <option value="WALKING">walking</option>
-          <option value="TRANSIT">bus</option>
-        </select>
+        <div class="directions-header">
+          <h1 class="mb-0">Directions</h1>
+          <select id="mode" class="btn" onchange="calculateAndDisplayRoute()">
+            <option value="DRIVING">driving</option>
+            <option value="BICYCLING">Bicycling</option>
+            <option value="WALKING">walking</option>
+            <option value="TRANSIT">bus</option>
+          </select>
+        </div>
         <div id="panel"></div>
-      </div> <!-- end main-wrap -->
+      </div> <!-- end map-wrap -->
 
     </div> <!-- end main-wrap -->
 
