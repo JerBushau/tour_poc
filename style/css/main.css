@@ -40,6 +40,9 @@
   height: 300px;
   width: 100%;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 
 @media (max-width: 675px) {
   #main-wrap {
