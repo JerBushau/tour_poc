@@ -39,6 +39,7 @@ select {
 }
 
  #panel {
+  text-align: center;
   background-color: rgb(229, 227, 223);
   line-height: 30px;
   overflow: auto;
@@ -64,6 +65,18 @@ select {
 .info-header {
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+
+table.adp-placemark {
+  margin: 0;
+}
+
+.adp-summary {
+  background: #FBE562;
+}
+
+.adp-directions {
   width: 100%;
 }
 
