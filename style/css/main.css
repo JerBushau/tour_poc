@@ -3,6 +3,12 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  width: 100%;
+}
+
 select {
   padding-left: 10px;
 }
@@ -17,13 +23,20 @@ select {
 
 #map-wrap,
 #info-wrap {
+  position: absolute;
   flex-direction: column;
-  padding: 10px;
-  width: 50%;
+  width: 100%;
+}
+
+#info-wrap p {
+  padding: 0 15px;
+  text-align: center;
 }
 
 #main-wrap {
-  max-width: 1000px;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
   margin: auto;
 }
 
@@ -34,7 +47,12 @@ select {
   width: 100%;
 }
 
+#photo {
+  height: 500px;
+}
+
 #map-wrap {
+  display: none;
   height: auto;
 }
 
@@ -45,27 +63,51 @@ select {
   overflow: auto;
 }
 
+.site-name {
+  text-align: center;
+  font-size: 1.4em;
+}
+
 .btn {
   margin: 0;
-  min-width: 100px;
+  min-width: 75px;
   font-size: 20px;
-  height: 2.1em;
+  background: buttonface;
+  height: 2.4em;
   border: none;
   border-radius: 10px;
   outline: #fff;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
-.btn:hover {
+.btn:active {
   background: #777;
   color: white;
 }
 
+.map-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 15%;
+  z-index: 1;
+  transform: scale(0.8, 0.8);
+  transition: transform 0.2s;
+}
+
+.map-btn:active {
+  transform: scale(1, 1);
+}
 .directions-header,
 .info-header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin: 10px 0;
+}
+
+.directions-header {
+  margin: 0;
 }
 
 table.adp-placemark {
@@ -88,6 +130,11 @@ table.adp-placemark {
   margin-top: 0;
 }
 
+.align-b {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
 @media (max-width: 700px) {
   #main-wrap {
     flex-direction: column;
@@ -95,5 +142,14 @@ table.adp-placemark {
   #map-wrap,
   #info-wrap {
     width: 100%;
+  }
+
+  #photo {
+    height: 300px;
+  }
+
+  .btn {
+    font-size: 15px;
+    min-width: 50px;
   }
 }
